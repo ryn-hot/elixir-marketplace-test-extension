@@ -16,6 +16,20 @@ The source uses a new disposable publisher identity. Signing keys and author
 state are outside this source repository. No paid credentials are fabricated,
 and no adoption gate is disabled.
 
-This repository is currently LOCAL ONLY. It has not been published or seeded.
-The owner must approve its public destination before any remote is configured
-or files are uploaded. No company-operated seed/marketplace host is implied.
+The owner approved publishing this generated test source on 2026-11-06 to
+`ryn-hot/elixir-marketplace-test-extension` on GitHub. This repository contains
+only public source and its license, not signing keys, credentials, media,
+packaged releases or production extensions. It is not a marketplace, catalog,
+relay, seed service or proof that the public product is ready.
+
+The two immutable test snapshots are:
+
+| Version | Source commit |
+| --- | --- |
+| 1.0.0 | `8a3dcef4e9f3efbe88f569437c9f1fa28d6435fd` |
+| 1.1.0 | `842277ac588189eccf1c78deac2de665b4942024` |
+
+The later README-only commit records publication; it does not change either
+test snapshot. Source/package matching must use the exact declared commit,
+never a moving branch. Public source availability alone grants no searchable
+listing, adoption proof, installation, automatic update or code-safety claim.
