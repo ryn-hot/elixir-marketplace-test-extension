@@ -1,6 +1,6 @@
 // Generated qualification code, not a production content provider.
 // No imports, media, URLs, credentials, network, filesystem or persistent state.
-const version = '1.0.0';
+const version = '1.1.0';
 const cache = {maxAgeSeconds: 60, staleWhileRevalidateSeconds: 0, etag: version};
 
 function reply(body, status = 200) {

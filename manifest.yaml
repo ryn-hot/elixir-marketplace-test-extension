@@ -1,5 +1,5 @@
 id: elx:cmohyr6b4xot4nvurbdhhgbkdwnk5gve2ltxk2awlted6xrhl67a/qualification-fixture
-version: 1.0.0
+version: 1.1.0
 kind: module
 name: Elixir Qualification Fixture
 description: Synthetic metadata only. No media, network requests, accounts or secrets.
