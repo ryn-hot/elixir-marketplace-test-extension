@@ -1,0 +1,34 @@
+id: elx:tyrxa3m7vraepn3gw7hdhj7mo6qxsinekhkbzc6cdnmgfnubtk6a/holder-failover
+version: 1.0.0
+kind: module
+name: Elixir Synthetic Holder Failover
+description: Harmless transfer fixture. No media, accounts, secrets or network calls.
+permissions:
+  - live.catalog.read
+  - live.stream.resolve
+  - live.artwork.fetch
+provides:
+  - capability: live.catalog_provider
+    slot: default
+    cardinality: many
+    implementation: holder-failover
+    contract_version: 1
+    scope:
+      actions: [catalog, meta, resolve]
+      live_item_types: [channel]
+      stream_protocols: [hls]
+    endpoint:
+      type: source-js-v1
+runtime:
+  type: container
+  profile: source-js-v1
+  entrypoint: src/provider.mjs
+  security:
+    run_as_non_root: true
+    read_only_rootfs: true
+    no_new_privileges: true
+    drop_capabilities: [ALL]
+    prohibit_docker_socket: true
+    prohibit_host_media_mounts: true
+    cpu_quota: '0.2'
+    memory_limit_mb: 64
